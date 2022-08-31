@@ -1,0 +1,43 @@
+.grid {
+  display: grid;
+  grid-gap: 10px;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+@media screen and (min-width: 1000px) {
+  .grid {
+    grid-gap:3px;
+  }
+}
+
+.square {
+  width: 20vw;
+  height: 20vw;
+  max-width: 200px;
+  max-height: 200px;
+  font-size: 5rem;
+  color: #e8e5e5;
+  border-radius: 25px;
+}
+
+.square_o {
+  background-color: rgb(147, 221, 111);
+}
+
+.square_x {
+  background-color: rgb(238, 62, 97);
+}
+
+.reset {
+  margin-top: 2rem;
+  font-size: 2rem;
+  background-color: rgb(121, 230, 230);
+  border: none;
+  border-radius: 6px;
+  padding: 1rem;
+  cursor: pointer;
+}
+
+p {
+  font-size: 2rem;
+}
