@@ -1,12 +1,12 @@
 .grid {
   display: grid;
-  grid-gap: 10px;
+  grid-gap: 7.5px;
   grid-template-columns: repeat(3, 1fr);
 }
 
 @media screen and (min-width: 1000px) {
   .grid {
-    grid-gap:3px;
+    grid-gap: 7.5px;
   }
 }
 
@@ -15,29 +15,48 @@
   height: 20vw;
   max-width: 200px;
   max-height: 200px;
-  font-size: 5rem;
-  color: #e8e5e5;
+  font-size: 4rem;
+  text-align: center;
+  color: white;
   border-radius: 25px;
 }
 
 .square_o {
-  background-color: rgb(147, 221, 111);
+  background-color: rgb(80, 212, 168);
 }
 
 .square_x {
-  background-color: rgb(238, 62, 97);
+  background-color: rgb(233, 62, 62);
 }
 
 .reset {
   margin-top: 2rem;
   font-size: 2rem;
-  background-color: rgb(121, 230, 230);
+  width: 30vw;
+  background-color: rgb(67, 193, 243);
+  color: white;
   border: none;
-  border-radius: 6px;
+  border-radius: 20px;
   padding: 1rem;
   cursor: pointer;
+  position: absolute;
+  left: 50%;
+  -ms-transform: translate(-50%, 30%);
+  transform: translate(-50%, 30%);
+}
+
+@media screen and (min-width: 1000px) {
+  .reset {
+    -ms-transform: translate(-50%, 10%);
+    transform: translate(-50%, 10%);
+    font-size: 2rem;
+    width: 30vw;
+  }
 }
 
 p {
   font-size: 2rem;
+  text-align: center;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  margin-top: -9rem;
 }
