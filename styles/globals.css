@@ -23,10 +23,18 @@
 
 .square_o {
   background-color: rgb(80, 212, 168);
+  animation: squareBounce linear 1s;
+  transition: 0.5s;
 }
 
 .square_x {
   background-color: rgb(233, 62, 62);
+  animation: squareBounce linear 1s;
+  transition: 0.5s;
+}
+
+.reset:hover{
+  animation: resetBounce 0.5s linear;
 }
 
 .reset {
@@ -59,4 +67,28 @@ p {
   text-align: center;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   margin-top: -9rem;
+}
+
+@keyframes squareBounce {
+  20%, 50%, 80%, to {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-30px);
+  }
+  70% {
+    transform: translateY(-15px);
+  }
+  90% {
+    transform: translateY(-4px);
+  }
+}
+
+@keyframes resetBounce {
+  0%, 50%, 100%, to {
+    transform: translate(-50%, 10%);
+  }
+  25%, 75% {
+    transform: translate(-50%, 00%);
+  }
 }
