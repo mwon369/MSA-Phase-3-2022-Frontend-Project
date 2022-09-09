@@ -24,18 +24,14 @@
 
 .square_o {
   background-color: rgb(80, 212, 168);
-  animation: squareBounce linear 1s;
+  animation: rubberBand linear 0.5s;
   transition: 0.2s;
 }
 
 .square_x {
   background-color: rgb(233, 62, 62);
-  animation: squareBounce linear 1s;
+  animation: rubberBand linear 0.5s;
   transition: 0.2s;
-}
-
-.reset:hover{
-  animation: resetBounce 0.5s linear;
 }
 
 .reset {
@@ -54,6 +50,10 @@
   transform: translate(-50%, 30%);
 }
 
+.reset:hover{
+  animation: resetBounce 0.5s linear;
+}
+
 @media screen and (min-width: 1000px) {
   .reset {
     -ms-transform: translate(-50%, 10%);
@@ -70,26 +70,32 @@ p {
   margin-top: -9rem;
 }
 
-@keyframes squareBounce {
-  20%, 50%, 80%, to {
-    transform: translateY(0);
+@keyframes rubberBand {
+  0% {
+    transform: scale3d(1, 1, 1);
   }
-  40% {
-    transform: translateY(-30px);
+  35% {
+    transform: scale3d(1.25, 0.75, 1);
   }
-  70% {
-    transform: translateY(-15px);
+  45% {
+    transform: scale3d(0.75, 1, 1);
   }
-  90% {
-    transform: translateY(-4px);
+  60% {
+    transform: scale3d(1.2, 0.8, 1);
+  }
+  75% {
+    transform: scale3d(1.05, 0.95, 1);
+  }
+  100% {
+    transform: scale3d(1, 1, 1);
   }
 }
 
 @keyframes resetBounce {
   0%, 50%, 100%, to {
-    transform: translate(-50%, 10%);
+    transform: translate(-50%, 15%);
   }
   25%, 75% {
-    transform: translate(-50%, 00%);
+    transform: translate(-50%, -15%);
   }
 }
