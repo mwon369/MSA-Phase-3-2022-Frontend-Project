@@ -1,3 +1,20 @@
+# MSA Phase 3 2022 Frontend
+
+A TypeScript & React tic-tac-toe web application.
+
+## Advanced Features List
+- [x] UI Scalability with window size 
+- [x] Mobile first development (using media query breakpoints, etc)
+- [x] Storybook w/ both actions and interactions (play)
+- [ ] Progressive Web App (PWA) functionality w/ clear use of the service worker
+- [x] API connection to your own API that is cloud hosted
+- [ ] Comprehensive unit testing
+- [ ] OAuth2 with PKCE login w/ at least ONE third party provider
+- [ ] Clear usage of Websockets
+- [x] At least one fluid animation
+- [ ] Redux state management
+- [ ] Demonstration of complex FE logic
+
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started
